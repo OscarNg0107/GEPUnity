@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -8,9 +9,11 @@ public class PlayerCharacterInput : MonoBehaviour
     [Header("Character Input Values")]
     public Vector2 move;
     public Vector2 look;
+    public Vector3 mousePos;
     public bool jump;
     public bool sprint;
     public bool openInvent;
+    public bool itemPlace;
 
     [Header("Movement Settings")]
     public bool analogMovement;
@@ -52,6 +55,11 @@ public class PlayerCharacterInput : MonoBehaviour
         look = newLookDirection;
     }
 
+    public void GetMousePos(Vector3 newMousePos) 
+    {
+        mousePos = newMousePos;
+    }
+
     public void JumpInput(bool newJumpState)
     {
         jump = newJumpState;
@@ -72,14 +80,24 @@ public class PlayerCharacterInput : MonoBehaviour
         Cursor.lockState = newState ? CursorLockMode.Locked : CursorLockMode.None;
     }
 
-    public void OnOpenInevnt(InputValue value)
+    public void OnOpenInvent(InputValue value)
     {
         InventInput(value.isPressed);
     }
 
     public void InventInput(bool newOpenInvent)
     {
-        openInvent = newOpenInvent;
+        openInvent = !openInvent;
+    }
+
+    public void OnPlaceItem(InputValue value) 
+    {
+        PlaceInput(value.isPressed);
+    }
+
+    public void PlaceInput(bool newItemplace) 
+    {
+        itemPlace = newItemplace;
     }
 
 }

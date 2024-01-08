@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 33057513195372016}
   - component: {fileID: 23699801759568714}
   - component: {fileID: 4024362035198151736}
-  - component: {fileID: 1387037823070152853}
   - component: {fileID: 5306021921586818125}
   m_Layer: 6
   m_Name: Knife_Blueprint
@@ -107,33 +106,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.1, y: 1.5542914, z: 0.26378492}
   m_Center: {x: -0.00000030919907, y: 0.021474777, z: -0.00000002235174}
---- !u!54 &1387037823070152853
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1142442885390036}
-  serializedVersion: 4
-  m_Mass: 10
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &5306021921586818125
 MonoBehaviour:
   m_ObjectHideFlags: 0
