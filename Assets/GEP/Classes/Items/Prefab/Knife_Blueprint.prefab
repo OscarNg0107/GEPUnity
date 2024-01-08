@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 33057513195372016}
   - component: {fileID: 23699801759568714}
   - component: {fileID: 4024362035198151736}
-  - component: {fileID: 5306021921586818125}
   m_Layer: 6
   m_Name: Knife_Blueprint
   m_TagString: Untagged
@@ -28,13 +27,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1142442885390036}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0.02, z: 0}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!33 &33057513195372016
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -106,16 +105,3 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.1, y: 1.5542914, z: 0.26378492}
   m_Center: {x: -0.00000030919907, y: 0.021474777, z: -0.00000002235174}
---- !u!114 &5306021921586818125
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1142442885390036}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18ec6fb651e234b4785b97361e2df55a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemPrefab: {fileID: 1142442885390036, guid: a1ee031d4e9f91f4980207dfd371b622, type: 3}

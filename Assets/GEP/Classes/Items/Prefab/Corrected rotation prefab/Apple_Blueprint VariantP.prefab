@@ -1,0 +1,124 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1319144482590639323
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8178040230166420057}
+  - component: {fileID: 8226157754600961295}
+  m_Layer: 0
+  m_Name: Apple_Blueprint VariantP
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8178040230166420057
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1319144482590639323}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4073366278182066079}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8226157754600961295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1319144482590639323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18ec6fb651e234b4785b97361e2df55a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemPrefab: {fileID: 3735866477557304866, guid: 514beaa544ab11a4d9cedbb0a2d8dc0d,
+    type: 3}
+--- !u!1001 &7436223992612368716
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8178040230166420057}
+    m_Modifications:
+    - target: {fileID: 6896496877449864915, guid: a4d1c90c6f2501a4a95c4ffd43164068,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6896496877449864915, guid: a4d1c90c6f2501a4a95c4ffd43164068,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6896496877449864915, guid: a4d1c90c6f2501a4a95c4ffd43164068,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6896496877449864915, guid: a4d1c90c6f2501a4a95c4ffd43164068,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6896496877449864915, guid: a4d1c90c6f2501a4a95c4ffd43164068,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6896496877449864915, guid: a4d1c90c6f2501a4a95c4ffd43164068,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6896496877449864915, guid: a4d1c90c6f2501a4a95c4ffd43164068,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6896496877449864915, guid: a4d1c90c6f2501a4a95c4ffd43164068,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6896496877449864915, guid: a4d1c90c6f2501a4a95c4ffd43164068,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6896496877449864915, guid: a4d1c90c6f2501a4a95c4ffd43164068,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6897507875143489493, guid: a4d1c90c6f2501a4a95c4ffd43164068,
+        type: 3}
+      propertyPath: m_Name
+      value: Apple_Blueprint Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 4940097927553698457, guid: a4d1c90c6f2501a4a95c4ffd43164068, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a4d1c90c6f2501a4a95c4ffd43164068, type: 3}
+--- !u!4 &4073366278182066079 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6896496877449864915, guid: a4d1c90c6f2501a4a95c4ffd43164068,
+    type: 3}
+  m_PrefabInstance: {fileID: 7436223992612368716}
+  m_PrefabAsset: {fileID: 0}

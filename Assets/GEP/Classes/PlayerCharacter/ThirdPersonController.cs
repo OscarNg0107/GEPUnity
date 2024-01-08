@@ -76,7 +76,9 @@ namespace StarterAssets
 
         public GameObject item_Blueprint;
         public ItemPlacement item_Blueprint_Scripts;
-        private bool inventOpened;
+        private bool itemPlacing;
+
+        public LayerMask GroundLayerMask;
 
         // cinemachine
         private float _cinemachineTargetYaw;
@@ -163,7 +165,7 @@ namespace StarterAssets
             }
             else 
             {
-                Cursor.visible = true;
+                Cursor.visible = false;
                 _input.cursorLocked = true;
                 _input.cursorInputForLook = true;
                 _input.OnApplicationFocus(false);
@@ -173,12 +175,24 @@ namespace StarterAssets
             {
                 item_Blueprint_Scripts = FindAnyObjectByType<ItemPlacement>();
                 item_Blueprint = item_Blueprint_Scripts.gameObject;
-                inventory.SetActive(false);
-                ItemPlacing();
-                if (_input.itemPlace) 
+                _input.openInvent = false;
+                if (_input.cursorLocked) 
                 {
-                    item_Blueprint_Scripts.ItemPlace();
+                    if (ItemPlacing()) 
+                    { 
+                        if (_input.itemPlace) 
+                        {
+                            item_Blueprint_Scripts.ItemPlace();
+                            itemPlacing = false;
+                        }           
+                    }       
                 }
+                
+                else 
+                {
+                    _input.itemPlace = false;
+                }
+                
             }
             
         }
@@ -423,18 +437,24 @@ namespace StarterAssets
         }
 
         private void OpenInvent()
-        {      
-           inventory.SetActive(_input.openInvent);
+        {
+            if (!itemPlacing) 
+            {
+                inventory.SetActive(_input.openInvent);
+            }
         }
 
-        private void ItemPlacing() 
+        private bool ItemPlacing() 
         {
+            itemPlacing = true;
             Ray ray = Camera.main.ScreenPointToRay(Mouse.current.position.ReadValue());
-            if (Physics.Raycast(ray, out RaycastHit raycastHit, 999f))
+            if (Physics.Raycast(ray, out RaycastHit raycastHit, 10f, GroundLayerMask))
             {
                 item_Blueprint.transform.position = raycastHit.point;
                 item_Blueprint.transform.rotation = Quaternion.FromToRotation(Vector3.up, raycastHit.normal);
+                return true;
             }
+            return false;
         }
     }
 }

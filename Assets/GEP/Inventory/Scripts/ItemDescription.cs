@@ -11,21 +11,25 @@ public class ItemDescription : MonoBehaviour
     [SerializeField] private Text itemWeight;
     [SerializeField] private Text itemDescript;
 
-    [SerializeField] private GameObject inventory;
+    [SerializeField] private InventoryController inventory;
     // Start is called before the first frame update
     void Start()
     {
-        inventory = GameObject.Find("Inventory");
-        //gameObject.SetActive(false);
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (!inventory.activeSelf) 
+        if(TryGetComponent<InventoryController>(out inventory))
         {
-            Destroy(gameObject);
+             if (!inventory.gameObject.activeSelf ) 
+            {
+                Destroy(gameObject);
+            }
         }
+        Destroy(gameObject);
+
     }
 
     public void SetItem(Item item) 

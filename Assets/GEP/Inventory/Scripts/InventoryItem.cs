@@ -67,7 +67,6 @@ public class InventoryItem : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
             buttonList.transform.position= pointerData.position;
             ItemMenu menu = newItemMenu.GetComponent<ItemMenu>();
             menu.SetItemSelected(this);
-            
         }
     }
 

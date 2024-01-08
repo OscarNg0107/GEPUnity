@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Weapon_Knife
   m_EditorClassIdentifier: 
   type: 1
-  Mesh: {fileID: 1142442885390036, guid: 7df8587eae91f654cb0590fbd224f809, type: 3}
-  Mesh_blueprint: {fileID: 1142442885390036, guid: b660de329368d0c4ebb58cdccac6ea72,
+  Mesh: {fileID: 8521937165172569541, guid: 0745211a361845542b9ddbd933ae93ff, type: 3}
+  Mesh_blueprint: {fileID: 4887474972070998495, guid: 623cf87414bc3ce428912c1495ad6d31,
     type: 3}
   itemName: Knife
   stackable: 0
