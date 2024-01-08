@@ -1,0 +1,56 @@
+{
+    "name": "InventoryAction",
+    "maps": [
+        {
+            "name": "Inventory",
+            "id": "b1fe9762-5f32-42c2-bb66-52ce432fcc4c",
+            "actions": [
+                {
+                    "name": "OpenInvent",
+                    "type": "Button",
+                    "id": "ce33b386-c09b-4161-9fd5-e4ccdb441e06",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "0011eb05-9007-4f84-80cd-c7be0d47d9ce",
+                    "path": "<Keyboard>/tab",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "KeyboardMouse",
+                    "action": "OpenInvent",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "68f27361-40a0-47fe-afec-c1f8bce5403c",
+                    "path": "<Gamepad>/buttonWest",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "OpenInvent",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Gamepad",
+            "bindingGroup": "Gamepad",
+            "devices": []
+        },
+        {
+            "name": "KeyboardMouse",
+            "bindingGroup": "KeyboardMouse",
+            "devices": []
+        }
+    ]
+}
