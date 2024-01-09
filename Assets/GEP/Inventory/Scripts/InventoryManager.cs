@@ -62,15 +62,19 @@ public class InventoryManager : MonoBehaviour
         if (slotItem.selected) 
         {
             Item item = slotItem.item;
-            slotItem.stackNum--;
-            if(slotItem.stackNum <= 0) 
+            if(item.type == ItemType.Consumable) 
             {
-                Destroy(slotItem.gameObject);
+                slotItem.stackNum--;
+                if(slotItem.stackNum <= 0) 
+                {
+                    Destroy(slotItem.gameObject);
+                }
+                else 
+                {
+                    slotItem.RefreshStackText(); 
+                }    
             }
-            else 
-            {
-                slotItem.RefreshStackText(); 
-            }    
+            
             return item;
         } 
         return null;
