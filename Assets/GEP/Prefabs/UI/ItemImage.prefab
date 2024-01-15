@@ -179,6 +179,7 @@ MonoBehaviour:
     type: 3}
   ItemDescriptionUIPrefab: {fileID: 5219363702161271483, guid: f5982702dbbb2664393305bdc6560693,
     type: 3}
+  ItemDesUI: {fileID: 0}
   selected: 0
 --- !u!114 &5210840096907381397
 MonoBehaviour:
@@ -273,26 +274,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 3294125867181446598}
-          m_TargetAssemblyTypeName: InventoryItem, Assembly-CSharp
-          m_MethodName: PointerEnter
-          m_Mode: 0
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 1
-    callback:
-      m_PersistentCalls:
-        m_Calls: []
 --- !u!1 &6414999083464843499
 GameObject:
   m_ObjectHideFlags: 0
